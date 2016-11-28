@@ -1,0 +1,12 @@
+{
+  "name": "qwestern/yii2-asset-intl",
+  "type": "intl-javascript-extension",
+  "minimum-stability": "stable",
+  "require" :{
+    "npm-asset/intl-messageformat": "^1.3.0",
+    "npm-asset/intl": "^1.2.5"
+  },
+  "config": {
+    "process-timeout": 1800
+  }
+}

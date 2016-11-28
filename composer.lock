@@ -1,0 +1,276 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "01b0317cb06da4391ee4a81fbbfee776",
+    "content-hash": "ce43b12712b60ea81f0abf51e1d95623",
+    "packages": [
+        {
+            "name": "npm-asset/intl",
+            "version": "1.2.5",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/intl/-/intl-1.2.5.tgz",
+                "reference": null,
+                "shasum": "82244a2190c4e419f8371f5aa34daa3420e2abde"
+            },
+            "require-dev": {
+                "npm-asset/async": ">=0.9.0,<0.10.0",
+                "npm-asset/babel-cli": ">=6.2.0,<7.0.0",
+                "npm-asset/babel-eslint": ">=6.1.2,<7.0.0",
+                "npm-asset/babel-plugin-transform-es2015-modules-commonjs": ">=6.4.0,<7.0.0",
+                "npm-asset/babel-plugin-transform-es3-member-expression-literals": ">=6.3.13,<7.0.0",
+                "npm-asset/babel-plugin-transform-es3-property-literals": ">=6.3.13,<7.0.0",
+                "npm-asset/babel-plugin-transform-object-rest-spread": ">=6.1.18,<7.0.0",
+                "npm-asset/babel-polyfill": ">=6.3.14,<7.0.0",
+                "npm-asset/babel-preset-es2015": "6.1.18",
+                "npm-asset/babel-preset-es2015-rollup": "1.1.1",
+                "npm-asset/babel-register": ">=6.2.0,<7.0.0",
+                "npm-asset/cldr-cal-buddhist-full": "28.0.0",
+                "npm-asset/cldr-cal-chinese-full": "28.0.0",
+                "npm-asset/cldr-cal-coptic-full": "28.0.0",
+                "npm-asset/cldr-cal-dangi-full": "28.0.0",
+                "npm-asset/cldr-cal-ethiopic-full": "28.0.0",
+                "npm-asset/cldr-cal-hebrew-full": "28.0.0",
+                "npm-asset/cldr-cal-indian-full": "28.0.0",
+                "npm-asset/cldr-cal-islamic-full": "28.0.0",
+                "npm-asset/cldr-cal-japanese-full": "28.0.0",
+                "npm-asset/cldr-cal-persian-full": "28.0.0",
+                "npm-asset/cldr-cal-roc-full": "28.0.0",
+                "npm-asset/cldr-core": "28.0.0",
+                "npm-asset/cldr-dates-full": "28.0.0",
+                "npm-asset/cldr-numbers-full": "28.0.0",
+                "npm-asset/cli-color": ">=1.0.0,<2.0.0",
+                "npm-asset/clui": ">=0.3.1,<0.4.0",
+                "npm-asset/eslint": ">=2.2.0,<3.0.0",
+                "npm-asset/estraverse-fb": ">=1.3.1,<2.0.0",
+                "npm-asset/finalhandler": ">=0.4.0,<0.5.0",
+                "npm-asset/glob": ">=5.0.3,<6.0.0",
+                "npm-asset/grunt": ">=0.4.5,<0.5.0",
+                "npm-asset/grunt-cli": "~0.1.13",
+                "npm-asset/grunt-contrib-clean": ">=0.6.0,<0.7.0",
+                "npm-asset/grunt-contrib-copy": ">=0.5.0,<0.6.0",
+                "npm-asset/grunt-curl": ">=2.1.0,<3.0.0",
+                "npm-asset/grunt-zip": ">=0.16.2,<0.17.0",
+                "npm-asset/jshint": ">=2.5.5,<3.0.0",
+                "npm-asset/mkdirp": ">=0.5.1,<0.6.0",
+                "npm-asset/object.assign": ">=1.1.1,<2.0.0",
+                "npm-asset/rimraf": ">=2.4.2,<3.0.0",
+                "npm-asset/rollup": ">=0.26.0,<0.27.0",
+                "npm-asset/rollup-plugin-babel": ">=2.3.9,<3.0.0",
+                "npm-asset/rollup-plugin-commonjs": ">=2.2.0,<3.0.0",
+                "npm-asset/rollup-plugin-memory": ">=1.0.0,<2.0.0",
+                "npm-asset/rollup-plugin-npm": ">=1.3.0,<2.0.0",
+                "npm-asset/rollup-plugin-replace": ">=1.1.0,<2.0.0",
+                "npm-asset/rollup-plugin-uglify": ">=0.1.0,<0.2.0",
+                "npm-asset/sauce-tunnel": ">=2.2.3,<3.0.0",
+                "npm-asset/serve-static": ">=1.10.0,<2.0.0",
+                "npm-asset/wd": ">=0.3.6,<0.4.0"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/andyearnshaw/Intl.js/issues"
+                },
+                "npm-asset-main": "index.js",
+                "npm-asset-directories": {
+                    "test": "tests"
+                },
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://github.com/andyearnshaw/Intl.js.git"
+                },
+                "npm-asset-scripts": {
+                    "clean": "rimraf dist/ lib/ locale-data/",
+                    "build:data": "babel-node scripts/build-data",
+                    "build:lib": "babel-node scripts/build-lib",
+                    "build:dist:dev": "NODE_ENV=development babel-node scripts/build-dist",
+                    "build:dist:prod": "NODE_ENV=production babel-node scripts/build-dist",
+                    "build:dist": "npm run build:dist:dev && npm run build:dist:prod",
+                    "build": "npm run build:data && npm run build:lib && npm run build:dist",
+                    "lint": "eslint .",
+                    "test": "cd tests && node polyfilling.js && node sanity.js && node disableregexprestore.js && node noderunner.js && node saucelabs.js",
+                    "pretest": "npm run lint",
+                    "preversion": "npm run clean && npm run build && npm run test",
+                    "prepublish": "npm run clean && npm run build"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andy Earnshaw"
+                }
+            ],
+            "description": "Polyfill the ECMA-402 Intl API (except collation)",
+            "homepage": "https://github.com/andyearnshaw/Intl.js#readme",
+            "keywords": [
+                "ecma402",
+                "i18n",
+                "internationalization",
+                "intl",
+                "polyfill"
+            ]
+        },
+        {
+            "name": "npm-asset/intl-messageformat",
+            "version": "1.3.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/intl-messageformat/-/intl-messageformat-1.3.0.tgz",
+                "reference": null,
+                "shasum": "f7d926aded7a3ab19b2dc601efd54e99a4bd4eae"
+            },
+            "require": {
+                "npm-asset/intl-messageformat-parser": "1.2.0"
+            },
+            "require-dev": {
+                "npm-asset/benchmark": ">=1.0.0,<2.0.0",
+                "npm-asset/expect.js": ">=0.3.1,<0.4.0",
+                "npm-asset/grunt": ">=0.4.5,<0.5.0",
+                "npm-asset/grunt-benchmark": ">=0.3.0,<0.4.0",
+                "npm-asset/grunt-browserify": ">=3.3.0,<4.0.0",
+                "npm-asset/grunt-bundle-jsnext-lib": ">=0.5.0,<0.6.0",
+                "npm-asset/grunt-cli": ">=0.1.13,<0.2.0",
+                "npm-asset/grunt-contrib-clean": ">=0.6.0,<0.7.0",
+                "npm-asset/grunt-contrib-concat": ">=0.5.0,<0.6.0",
+                "npm-asset/grunt-contrib-connect": ">=0.9.0,<0.10.0",
+                "npm-asset/grunt-contrib-copy": ">=0.8.0,<0.9.0",
+                "npm-asset/grunt-contrib-jshint": ">=0.11.0,<0.12.0",
+                "npm-asset/grunt-contrib-uglify": ">=0.8.0,<0.9.0",
+                "npm-asset/grunt-extract-cldr-data": ">=3.0.0,<4.0.0",
+                "npm-asset/grunt-json-remove-fields": "dev-improve-files-and-output",
+                "npm-asset/grunt-saucelabs": ">=8.4.1,<9.0.0",
+                "npm-asset/intl": ">=0.1.4,<0.2.0",
+                "npm-asset/istanbul": ">=0.3.0,<0.4.0",
+                "npm-asset/mocha": ">=2.0.1,<3.0.0",
+                "npm-asset/xunit-file": "0.0.6"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/yahoo/intl-messageformat/issues"
+                },
+                "npm-asset-main": "index.js",
+                "npm-asset-directories": {
+                    "test": "tests"
+                },
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+ssh://git@github.com/yahoo/intl-messageformat.git"
+                },
+                "npm-asset-scripts": {
+                    "test": "istanbul cover -x lib/locales.js -- _mocha tests/runner.js --reporter spec",
+                    "travis": "istanbul cover -x lib/locales.js -- _mocha tests/runner.js --reporter spec && tests/saucelabs.sh",
+                    "prepublish": "grunt"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Ferraiuolo",
+                    "email": "eferraiuolo@gmail.com"
+                },
+                {
+                    "name": "Drew Folta",
+                    "email": "drew@folta.net"
+                },
+                {
+                    "name": "Caridy Patino",
+                    "email": "caridy@gmail.com"
+                },
+                {
+                    "name": "Anthony Pipkin",
+                    "email": "a.pipkin@yahoo.com"
+                }
+            ],
+            "description": "Formats ICU Message strings with number, date, plural, and select placeholders to create localized messages.",
+            "homepage": "https://github.com/yahoo/intl-messageformat",
+            "keywords": [
+                "globalization",
+                "i18n",
+                "icu",
+                "internationalization",
+                "intl",
+                "localization",
+                "messageformat",
+                "parser",
+                "plural"
+            ]
+        },
+        {
+            "name": "npm-asset/intl-messageformat-parser",
+            "version": "1.2.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/intl-messageformat-parser/-/intl-messageformat-parser-1.2.0.tgz",
+                "reference": null,
+                "shasum": "5906b7f953ab7470e0dc8549097b648b991892ff"
+            },
+            "require-dev": {
+                "npm-asset/expect.js": ">=0.3.1,<0.4.0",
+                "npm-asset/grunt": ">=0.4.5,<0.5.0",
+                "npm-asset/grunt-benchmark": ">=0.3.0,<0.4.0",
+                "npm-asset/grunt-bundle-jsnext-lib": ">=0.5.0,<0.6.0",
+                "npm-asset/grunt-cli": ">=0.1.13,<0.2.0",
+                "npm-asset/grunt-contrib-clean": ">=0.6.0,<0.7.0",
+                "npm-asset/grunt-contrib-copy": ">=0.7.0,<0.8.0",
+                "npm-asset/grunt-peg": ">=1.5.0,<2.0.0",
+                "npm-asset/istanbul": ">=0.3.2,<0.4.0",
+                "npm-asset/mocha": ">=2.0.1,<3.0.0",
+                "npm-asset/xunit-file": "0.0.6"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/yahoo/intl-messageformat-parser/issues"
+                },
+                "npm-asset-main": "index.js",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git://github.com/yahoo/intl-messageformat-parser.git"
+                },
+                "npm-asset-scripts": {
+                    "test": "istanbul cover -- _mocha test/unit/ --reporter spec",
+                    "prepublish": "grunt"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Ferraiuolo",
+                    "email": "eferraiuolo@gmail.com"
+                }
+            ],
+            "description": "Parses ICU Message strings into an AST via JavaScript.",
+            "homepage": "https://github.com/yahoo/intl-messageformat-parser",
+            "keywords": [
+                "globalization",
+                "i18n",
+                "icu",
+                "internationalization",
+                "intl",
+                "localization",
+                "messageformat",
+                "parser",
+                "plural"
+            ]
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
